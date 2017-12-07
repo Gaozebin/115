@@ -1,13 +1,14 @@
-import Person from "../../src/practice.js";
-export class Worker extends Person {
+import Person from "../../src/practice_2/person.js";
+export class Student extends Person {
 
-  constructor(name, age) {\
+  constructor(name, age,num) {
     super(name, age)
+        this.num = num;
   }
                           
   introduce(){
-    return super.introduce() + "I am a Worker. I have a job.";
+    return super.introduce() + "I am a Student. I am at Class "+ this.num+".";
   }                         
 }
   
-  module.exports = Worker;
+  module.exports = Student;
